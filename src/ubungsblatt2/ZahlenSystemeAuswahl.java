@@ -9,6 +9,7 @@ public class ZahlenSystemeAuswahl {
 		//Eingabe der Zahlenbasis
 		System.out.println("Bitte geben Sie Basis der eingegebenen Zahl ein\nDiese kann 2, 8, 10 oder 16 sein");
 		int base = sc.nextInt();
+		//Überprüfung ob die Basies passt
 		if(base==2|base==8|base==10|base==16) {
 			
 			//Eingabe input
@@ -28,8 +29,9 @@ public class ZahlenSystemeAuswahl {
 			sc.close();
 					
 		}
+		//Falls Basis nicht passt, wird das Programm beendet
 		else {
-			System.out.println(base);
+			System.exit(0);
 		}
 	
 	}
